@@ -1,0 +1,424 @@
+/* styles/About.module.css */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.profileSection {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.profileImageContainer {
+    flex-shrink: 0;
+}
+
+.profileImage {
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.profileInfo {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.contactItem i {
+    color: var(--primary-color);
+}
+
+.objective {
+    background-color: var(--background-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.objective p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.sectionTitle i {
+    color: var(--primary-color);
+}
+
+.educationItem {
+    margin-bottom: 1.5rem;
+}
+
+.educationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.degree {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.date {
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.institution {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.courses {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skillGroup {
+    background-color: var(--background-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.skillGroupTitle {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.skillList {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: var(--text-secondary);
+}
+
+.skillList li {
+    margin-bottom: 0.5rem;
+}
+
+/* Projects section styles */
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project {
+    background-color: var(--background-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.projectTitle {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.projectDescription {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.projectTechnologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technology {
+    background-color: rgba(0, 112, 243, 0.1);
+    color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.experienceItem {
+    margin-bottom: 2rem;
+    background-color: var(--background-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.experienceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.position {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.company {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.responsibilities {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.responsibilities li {
+    margin-bottom: 0.5rem;
+}
+
+.softSkillsList,
+.personalQualitiesList,
+.certificationsList {
+    list-style-type: none;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.softSkillsList li,
+.personalQualitiesList li,
+.certificationsList li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.softSkillsList li::before,
+.personalQualitiesList li::before,
+.certificationsList li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.certification {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Testimonials section styles */
+.testimonialHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonialCta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.testimonialCta p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.testimonialCtaBtn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.testimonialCtaBtn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.emptyTestimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    text-align: center;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.emptyTestimonials i {
+    font-size: 3rem;
+    color: var(--text-light);
+}
+
+.emptyTestimonials p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.testimonialsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonialCard {
+    background-color: var(--background-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.testimonialCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.testimonialHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.testimonialName {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.testimonialDate {
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.testimonialMessage {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.loadMoreContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.loadMoreBtn {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.loadMoreBtn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .profileSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contactInfo {
+        justify-content: center;
+    }
+
+    .educationHeader,
+    .experienceHeader,
+    .testimonialHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .skillsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonialCta {
+        align-items: flex-start;
+    }
+}

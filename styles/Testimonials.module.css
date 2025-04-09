@@ -1,0 +1,107 @@
+/* styles/Testimonials.module.css */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--text-primary);
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.addButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.addButton:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    color: var(--text-secondary);
+    box-shadow: var(--box-shadow);
+}
+
+.emptyState i {
+    font-size: 3.5rem;
+    color: var(--text-light);
+}
+
+.emptyStateButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+}
+
+.emptyStateButton:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.testimonialGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .addButton {
+        align-self: flex-start;
+    }
+
+    .testimonialGrid {
+        grid-template-columns: 1fr;
+    }
+}
