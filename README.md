@@ -18,7 +18,6 @@ Ce projet a pour but de présenter mes compétences, mes projets réalisés, ain
 
 ##  Structure du projet
 
-```bash
 pages/
 ├── index.js           # Accueil
 ├── about.js           # À propos
@@ -32,14 +31,17 @@ pages/
 │   ├── add.js
 │   └── edit/
 
-À propos de moi
+---
+
+## À propos de moi
 Je suis Mouad, développeur web junior basé au Canada.
 Actuellement étudiant en programmation informatique, je suis passionné par le développement d'interfaces modernes, accessibles et dynamiques.
 Je cherche constamment à améliorer mes compétences techniques et à relever de nouveaux défis dans le domaine du web
 
-Me contacter
+## Me contacter
 ✉️ Email : benjellounmouad7@gmail.com
 
 🐙 GitHub : MouadBjl
+
 
 
